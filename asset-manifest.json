@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kpu-uphm-voting/static/css/main.f98dfc6d.css",
-    "main.js": "/kpu-uphm-voting/static/js/main.3df00f8c.js",
+    "main.js": "/kpu-uphm-voting/static/js/main.98c11da0.js",
     "static/js/787.086aa114.chunk.js": "/kpu-uphm-voting/static/js/787.086aa114.chunk.js",
     "index.html": "/kpu-uphm-voting/index.html",
     "main.f98dfc6d.css.map": "/kpu-uphm-voting/static/css/main.f98dfc6d.css.map",
-    "main.3df00f8c.js.map": "/kpu-uphm-voting/static/js/main.3df00f8c.js.map",
+    "main.98c11da0.js.map": "/kpu-uphm-voting/static/js/main.98c11da0.js.map",
     "787.086aa114.chunk.js.map": "/kpu-uphm-voting/static/js/787.086aa114.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f98dfc6d.css",
-    "static/js/main.3df00f8c.js"
+    "static/js/main.98c11da0.js"
   ]
 }
