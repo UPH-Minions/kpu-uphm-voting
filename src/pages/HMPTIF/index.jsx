@@ -1,10 +1,10 @@
 import { Container } from "@mui/material";
 import PageHeader from "../../components/PageHeader";
-import dataBEM from "../../data/bem";
 import Title from "../../components/Title";
 import Vision from "../../components/Vision";
 import Mission from "../../components/Mission";
 import customTheme from "../../styles/theme";
+import VoteNow from "../../components/VoteNow";
 
 const PageHMPTIF = () => {
   return (
@@ -17,8 +17,8 @@ const PageHMPTIF = () => {
         >
           <Title
             candidateNumber={1}
-            candidateName="#CANDIDATE 1"
-            major="Management"
+            candidateName="Vincent Cianata"
+            major="Informatics"
             intake="2021"
           />
           <Container
@@ -32,7 +32,7 @@ const PageHMPTIF = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/4yb01kMiY0Q"
+              src="https://www.youtube.com/embed/HJDHmkIYvPY"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -40,10 +40,19 @@ const PageHMPTIF = () => {
             ></iframe>
           </Container>
           <Vision
-            visionAbbreviation="K.F.C"
-            vision="To be a Christ-centered university founded upon and promoting true knowledge, faith in Christ and godly character aiming to develop God-fearing, competent and professional future leaders through excellent, holistic and transformational education."
+            vision="Menjadikan HMPTIF sebagai organisasi yang dapat melayani mahasiswa/i informatika UPH
+            Medan sehingga dapat meningkatkan kemampuan dan cara berpikir mahasiswa baik dalam
+            bidang akademik maupun non-akademik."
           />
-          <Mission missionAbbreviation="K.F.C" mission={dataBEM.mission1} />
+          <Mission
+            missionAbbreviation="LEAP"
+            mission={[
+              "Link - Memperkuat relasi dan kepercayaan antara sesama mahasiswa jurusan informatika.",
+              "Enhance - Mengadakan program kerja yang dapat meningkatkan ilmu dan kemampuan mahasiswa jurusan informatika.",
+              "Active - Mendukung mahasiswa jurusan informatika menjadi lebih aktif dengan berpartisipasi dan berkontribusi dalam berbagai kegiatan.",
+              "Potential - Mengadakan program kerja yang dapat mengembangkan potensi mahasiswa jurusan informatika.",
+            ]}
+          />
         </Container>
         <Container
           sx={{
@@ -55,8 +64,8 @@ const PageHMPTIF = () => {
         >
           <Title
             candidateNumber={2}
-            candidateName="#CANDIDATE 2"
-            major="Accounting"
+            candidateName="Irwanto Wijaya"
+            major="Informatics"
             intake="2021"
           />
           <Container
@@ -70,7 +79,7 @@ const PageHMPTIF = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/4yb01kMiY0Q"
+              src="https://www.youtube.com/embed/6p_WRaoh5mU"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -78,11 +87,27 @@ const PageHMPTIF = () => {
             ></iframe>
           </Container>
           <Vision
-            visionAbbreviation="K.F.C"
-            vision="To be a Christ-centered university founded upon and promoting true knowledge, faith in Christ and godly character aiming to develop God-fearing, competent and professional future leaders through excellent, holistic and transformational education."
+            visionAbbreviation="H D D (Help - Devote - Develop)"
+            vision="Menjadikan HMPTIF sebagai organisasi yang berkomitmen dalam membantu, mempererat hubungan kebersamaan serta mengembangkan potensi yang dimiliki mahasiswa/i program studi Informatika baik dalam bidang akademik maupun non-akademik."
           />
-          <Mission missionAbbreviation="K.F.C" mission={dataBEM.mission1} />
+          <Mission
+            missionAbbreviation="DREAM"
+            mission={[
+              "Drive – Menjadi wadah untuk menampung dan menyalur aspirasi serta bakat dari mahasiswa/i program studi informatika.",
+              "Relation – Membangun hubungan yang harmonis antara sesama mahasiswa/i program studi informatika.",
+              "Educate – Mengadakan program kerja yang dapat menjadi sumber ilmu dan wawasan mahasiswa/i program studi informatika.",
+              "Active – Menjadikan mahasiswa/i program studi informatika sebagai mahasiswa/i yang lebih aktif dalam mengekspresikan diri melalui program kerja yang akan dilaksanakan.",
+              "Model – Menjadi seorang pemimpin yang dapat memotivasi mahasiswa/i program studi informatika dalam bidang akademik maupun non akademik.",
+            ]}
+          />
         </Container>
+        <VoteNow
+          onVoteNow={() =>
+            window.location.replace(
+              "https://uph365.sharepoint.com/sites/KPUUPHMC2022/SitePages/PEMILU-2022-BEM.aspx"
+            )
+          }
+        />
       </Container>
     </>
   );
