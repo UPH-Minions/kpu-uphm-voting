@@ -151,7 +151,7 @@ const PageBEM = () => {
           <VoteNow
             onVoteNow={() =>
               window.location.replace(
-                "https://uph365.sharepoint.com/sites/KPUUPHMC2022/SitePages/PEMILU-2022-BEM.aspx"
+                "https://uph365.sharepoint.com/:u:/s/KPUUPHMC2022/EQs4xCR9ekNOrMJWp24f5ZIBFvrUh4nEHYEI9gkhpQwbVQ?e=cXUHYj"
               )
             }
           />
